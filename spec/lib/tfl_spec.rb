@@ -1,5 +1,4 @@
 require 'spec_helper'
 
-describe ::TflApi do
-
+describe ::Tfl do
 end

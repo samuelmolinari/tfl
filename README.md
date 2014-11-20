@@ -1,15 +1,15 @@
-# TflApi
+# Tfl Gem
 
-[![Build Status](https://travis-ci.org/samuelmolinari/tfl_api.svg?branch=master)](https://travis-ci.org/samuelmolinari/tfl_api)
-[![Gem Version](https://badge.fury.io/rb/tfl_api.svg)](http://badge.fury.io/rb/tfl_api)
-[![Code Climate](https://codeclimate.com/github/samuelmolinari/tfl_api/badges/gpa.svg)](https://codeclimate.com/github/samuelmolinari/tfl_api)
-[![Test Coverage](https://codeclimate.com/github/samuelmolinari/tfl_api/badges/coverage.svg)](https://codeclimate.com/github/samuelmolinari/tfl_api)
+[![Build Status](https://travis-ci.org/samuelmolinari/tfl.svg?branch=master)](https://travis-ci.org/samuelmolinari/tfl)
+[![Gem Version](https://badge.fury.io/rb/tfl.svg)](http://badge.fury.io/rb/tfl)
+[![Code Climate](https://codeclimate.com/github/samuelmolinari/tfl/badges/gpa.svg)](https://codeclimate.com/github/samuelmolinari/tfl)
+[![Test Coverage](https://codeclimate.com/github/samuelmolinari/tfl/badges/coverage.svg)](https://codeclimate.com/github/samuelmolinari/tfl)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'tfl_api'
+    gem 'tfl'
 
 And then execute:
 
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tfl_api
+    $ gem install tfl
 
 ## Usage
 

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'tfl_api/version'
+require 'tfl/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "tfl_api"
-  spec.version       = TflApi::VERSION
+  spec.name          = "tfl"
+  spec.version       = Tfl::VERSION
   spec.authors       = ["Samuel Molinari"]
   spec.email         = ["samuel@molinari.me"]
   spec.description   = %q{Ruby Tfl API}
