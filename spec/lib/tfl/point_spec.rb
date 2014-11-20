@@ -22,8 +22,8 @@ describe ::Tfl::Point do
     subject(:point) do
       described_class.new('.027317133742799650,51.591725648273090000,0')
     end
-    it { is_expected.to have_attributes(:coordinates => { lat: 0.02731713374279965,
-                                                          lng: 51.59172564827309,
+    it { is_expected.to have_attributes(:coordinates => { lat: 51.59172564827309,
+                                                          lng: 0.02731713374279965,
                                                           alt: 0.0 }) }
   end
 

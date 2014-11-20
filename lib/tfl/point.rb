@@ -29,7 +29,7 @@ module Tfl
     private
 
     def coordinates_from_str(coordinates)
-      Hash[[:lat, :lng, :alt].zip coordinates.split(',').map(&:to_f)]
+      Hash[[:lng, :lat, :alt].zip coordinates.split(',').map(&:to_f)]
     end
   end
 end
