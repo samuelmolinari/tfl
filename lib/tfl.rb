@@ -1,4 +1,5 @@
-require "tfl/version"
+require 'tfl/version'
+require 'tfl/client'
 
 class Tfl
 
