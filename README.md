@@ -21,7 +21,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configure client
+
+In order to use the Tfl API, you have to setup your credentials.
+
+#### The block way
+
+```ruby
+client = Tfl::Client.new do |config|
+  config.app_id = "...",
+  config.app_key = "..."
+end
+```
+
+#### The hash way
+
+```ruby
+credientials = {
+  :app_id => "...",
+  :app_key => "..."
+}
+
+client = Tfl::Client.new(credentials)
+```
 
 ## Contributing
 
