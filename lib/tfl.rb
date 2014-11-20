@@ -1,9 +1,6 @@
 require 'tfl/version'
 require 'tfl/client'
+require 'tfl/api'
 
-class Tfl
-
-  def initialize
-  end
-
+module Tfl
 end
