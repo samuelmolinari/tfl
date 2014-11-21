@@ -18,12 +18,7 @@ module Tfl
 
         placemarks = response[KEY_ROOT][KEY_DOCUMENT][KEY_PLACEMARK]
         placemarks.map do |placemark|
-          Placemark.new(
-              name: placemark['name'].strip,
-              description: placemark['description'].strip,
-              point: Point.new(placemark['Point']['coordinates'].strip),
-              style: styles[placemark['styleUrl'].strip.sub('#','')]
-            )
+          hash_to_placemark(placemark, styles)
         end
       end
 
@@ -40,6 +35,15 @@ module Tfl
           memo[s.id] = s
           memo
         end
+      end
+
+      def hash_to_placemark(placemark_response, styles = {})
+        Placemark.new(
+          name: placemark_response['name'].strip,
+          description: placemark_response['description'].strip,
+          point: Point.new(placemark_response['Point']['coordinates'].strip),
+          style: styles[placemark_response['styleUrl'].strip.sub('#','')]
+        )
       end
 
     end
