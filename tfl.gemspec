@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "guard"
   spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_dependency "httparty"
 end
