@@ -26,6 +26,10 @@ module Tfl
       @coordinates[:alt]
     end
 
+    def ==(other)
+      @coordinates == other.coordinates
+    end
+
     private
 
     def coordinates_from_str(coordinates)

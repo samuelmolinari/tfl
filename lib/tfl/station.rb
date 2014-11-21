@@ -1,4 +1,5 @@
 module Tfl
-  class Station < Placemark
+  class Station
+    attr_accessor :placemark
   end
 end

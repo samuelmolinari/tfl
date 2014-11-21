@@ -1,2 +1,5 @@
 --color
 --format documentation
+
+--tag ~integration
+--tag ~slow

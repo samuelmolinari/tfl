@@ -48,4 +48,19 @@ describe ::Tfl::Point do
     end
   end
 
+  describe '#==' do
+    it 'returns true when all coordinates match' do
+      expect(described_class.new('1,2,3')).to eq described_class.new('1,2,3')
+    end
+    it 'returns false when their latitudes do not match' do
+      expect(described_class.new('1,2,3')).not_to eq described_class.new('1,-2,3')
+    end
+    it 'returns false when their longitudes do not match' do
+      expect(described_class.new('1,2,3')).not_to eq described_class.new('-1,2,3')
+    end
+    it 'returns false when their altitudes do not match' do
+      expect(described_class.new('1,2,3')).not_to eq described_class.new('1,2,-3')
+    end
+  end
+
 end
